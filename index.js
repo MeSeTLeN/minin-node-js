@@ -33,7 +33,20 @@ const server = http.createServer((req, res) => {
     req.url === "/" ? "index.html" : req.url
   );
   const ext = path.extname(filePath);
+  let contentType = "text/html";
 
+  switch (ext) {
+    case ".css":
+      contentType = "text/css";
+      break;
+    case ".js":
+      contentType = "text/javascript";
+      break;
+
+    default:
+      contentType = "text/html";
+      break;
+  }
   if (!ext) {
     filePath += ".html";
   }
@@ -55,7 +68,7 @@ const server = http.createServer((req, res) => {
       });
     } else {
       res.writeHead(200, {
-        "Content-Type": "text/html",
+        "Content-Type": contentType,
       });
       res.end(content);
     }
