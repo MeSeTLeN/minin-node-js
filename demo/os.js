@@ -9,3 +9,5 @@ console.log("Инфа по процессорам", os.cpus());
 console.log("Свободная память", os.freemem());
 
 console.log("Всего памяти", os.totalmem());
+
+console.log("Домашняя директория", os.homedir());
