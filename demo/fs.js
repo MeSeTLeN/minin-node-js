@@ -17,4 +17,12 @@ fs.writeFile(filePath, "Hello NodeJS!", (err) => {
   }
 
   console.log("Файл создан");
+
+  fs.appendFile(filePath, "\nHello Again!", (err) => {
+    if (err) {
+      throw err;
+    }
+
+    console.log("Файл изменен");
+  });
 });
