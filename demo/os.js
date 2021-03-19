@@ -11,3 +11,5 @@ console.log("Свободная память", os.freemem());
 console.log("Всего памяти", os.totalmem());
 
 console.log("Домашняя директория", os.homedir());
+
+console.log("Включен:", os.uptime());
