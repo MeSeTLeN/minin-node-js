@@ -1,0 +1,29 @@
+{
+  "name": "minin-node-js",
+  "version": "1.0.0",
+  "description": "https://youtu.be/3aGSqasVPsI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeSeTLeN/minin-node-js.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs"
+  ],
+  "author": "Maksym",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeSeTLeN/minin-node-js/issues"
+  },
+  "homepage": "https://github.com/MeSeTLeN/minin-node-js#readme",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
